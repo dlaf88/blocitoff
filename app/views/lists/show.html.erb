@@ -9,6 +9,15 @@
   <strong>Description:</strong>
   <%= @list.description %>
 </p>
+<div class='items_wrapper'>
+  <%= render @list.items %>
+  <div class='form'>
+    <%= render "items/form" %>
+  </div>
+ 
+  
+  
+</div>
 
 <%= link_to 'Edit', edit_list_path(@list) %> |
 <%= link_to 'Back', lists_path %>
