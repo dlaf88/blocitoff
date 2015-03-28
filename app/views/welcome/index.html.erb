@@ -2,37 +2,16 @@
 
 
   <body>
+    <% if user_signed_in? %>
+    <h3> <%= link_to "My lists", lists_path, class: 'btn btn-primary' %></h3>
+    <% end %>
+    
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Bloccitoff</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
-          </form>
-        </div><!--/.navbar-collapse -->
-      </div>
-    </nav>
-
-    <!-- Main jumbotron for a primary marketing message or call to action -->
+        <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
         <h1>Bloccitoff</h1>
-        <p>An application that allows users to create self-destructing to-do lists. We'll call our application "Blocitoff", but you can name it anything you want.</p>
+        <p>An application that allows users to create self-destructing to-do lists.</p>
         <p><a class="btn btn-primary btn-lg" href="#" role="button">Sign Up &raquo;</a></p>
       </div>
     </div>

@@ -11,6 +11,7 @@ gem 'figaro', '~> 1.1.0'
 gem 'devise', '~> 3.4.1'
 
 gem 'uglifier', '>= 1.3.0'
+gem 'simple_form', '~> 3.1.0'
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
 gem 'bootstrap-sass', '~> 3.3.4'

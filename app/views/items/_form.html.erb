@@ -1,5 +1,6 @@
-<%= form_for([@list, @list.items.build]) do |f| %>
-<%= f.text_field :content, placeholder: "New Todo"%>
+<%= simple_form_for([@list, @list.items.build]) do |f| %>
+<%= f.text_field :content, placeholder: "Add a new todo item", class: 'form-control'%>
+<br>
 <%= f.submit %>
     
   
